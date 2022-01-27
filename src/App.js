@@ -1,36 +1,22 @@
-// import React from 'react';
-//
-// import './App.css';
-// import Notebook from "./components/Notebook";
-//
-// function App() {
-//     return (
-//         // <Notebook/>
-//         <Users/>
-//     );
-// };
-//
-// export default App;
-
-
-
-// Hw1
 import './App.css';
+import {useEffect, useState} from "react";
+import Posts from "./components/posts";
+import Comments from "./components/comments";
 
 
 function App() {
 
-    let [users, setUsers] = useState([]);
-    let [users, setUsers] = useState([])
-    let [users, setUsers] = useState([])
-
 
     return (
         <div>
-
+            <Users/>
+            <hr/>
+            <Posts/>
+            <hr/>
+            <Comments/>
         </div>
     );
-};
+}
 
 export default App;
 
