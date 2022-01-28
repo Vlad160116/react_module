@@ -18,7 +18,7 @@ export default function Users() {
         <div>
             <ul>
                 {
-                    users.map(value => <li key={value.id><User item={value}/></li>)
+                    users.map(value => <li key={value.id}><Users item={value}/></li>)
                     //users.map(value => <li key={value.id}> {value.name}</li>)
                 }
             </ul>

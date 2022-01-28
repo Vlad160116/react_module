@@ -16,7 +16,7 @@ export default function Posts() {
         <div>
             <ul>
                 {
-                    posts.map(value => <li key={value.id><User item={value}/></li>)
+                    posts.map(value => <li key={value.id}><Posts item={value}/></li>)
                     // posts.map(value => <li key={value.id}>{value.title}</li>)
                 }
             </ul>

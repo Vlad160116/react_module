@@ -16,7 +16,7 @@ export default function Comments() {
         <div>
             <ul>
                 {
-                    comments.map(value => <li key={value.id><User item={value}/></li>)
+                    comments.map(value => <li key={value.id}><Comments item={value}/></li>)
                     // comments.map(value => <li key={value.id}>{value.body}</li>)
                 }
             </ul>
