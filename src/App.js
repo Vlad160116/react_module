@@ -1,42 +1,62 @@
-import React, {useEffect, useState} from 'react';
-import './App.css';
+// import React, {useEffect, useState} from 'react';
+// import './App.css';
+// import L2 from "./components/L2";
+//
+// function App() {
+//     const user = {name:'Vlad', age: 25}
+//     return (
+//         <div>
+//             <L2>
+//                 {user} years old
+//             </L2>
+//         </div>
+//     );
+// }
+//
+// export default App;
 
+// import React, {useState} from 'react';
+//
+// const App = () => {
+//
+//     // let greeting = 'hello';
+//     const [greeting, setGreeting] = useState('hello')
+//     const adder = () => {
+//         // greeting+='!'
+//         setGreeting(greeting+'!')
+//         console.log(greeting);
+//     }
+//     return (
+//         <div>
+//             <button onClick={adder}>Click</button>
+//             {greeting}
+//         </div>
+//     );
+// };
+//
+// export default App;
 
-function App() {
-    // function click2 ()  {
-    //     console.log('click2 test');
+// import Users from './components/Users';
+//
+// const App = () => {
+//     return (
+//         <div>
+//             <users/>
+//         </div>
+//     );
+// };
+//
+// export default App;
 
-    let counter = 0;
-    const increment = () => {
-        counter++;
-        console.log(counter);
-    }
+import Users from './components/Users';
 
-    // let users = [
-    //     {name: 'vasya', age: 31, status: false},
-    //     {name: 'vlad', age: 19, status: true},
-    //     {name: 'kolya', age: 21, status: false},
-    //     {name: 'olya', age: 33, status: true},
-    //     {name: 'viktor', age: 15, status: true}
-    // ];
-
+const App = () => {
 
     return (
         <div>
-            {/*<button onClick={() => console.log('click')}>click me 1</button>*/}
-            {/*<button onClick={(click2) => console.log('click')}>click me 2</button>*/}
-
-            <h1>{counter}</h1>
-            <button onClick={increment}>increment me</button>
-
-            {/*{*/}
-            {/*    users.map((user) =>{*/}
-            {/*        return <div>name - {user.name}; status - {user.status.toString()}; age - {user.age.toString()}</div>*/}
-            {/*    })*/}
-            {/*}*/}
+            <Users/>
         </div>
     );
-}
+};
 
 export default App;
-
