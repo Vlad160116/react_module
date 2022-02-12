@@ -1,8 +1,9 @@
 import Users from "./components/Users/Users";
 import UsersDetails from "./components/UsersDetails/UsersDetails";
-import Posts from "./components/Posts/Posts";
+
 import css from "./App.module.css";
 import {useState} from "react";
+import Posts from "./components/Posts/Posts";
 // import {postService} from "./services/post.service";
 
 const App = () => {
