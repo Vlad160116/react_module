@@ -1,17 +1,31 @@
 import Users from "./components/Users/Users";
 import UsersDetails from "./components/UsersDetails/UsersDetails";
 import Posts from "./components/Posts/Posts";
-import style from "./App.module.css";
+import css from "./App.module.css";
+import {useState} from "react";
+// import {postService} from "./services/post.service";
 
 const App = () => {
+    const [user, setUser] = useState(null)
+    const [userId, setUserId] = useState(null)
+
+    const getUser = (user) => {
+        setUser(user)
+        setUserId(null)
+    }
+
+    const getUserId = (id) => {
+        // postService.getByUserId(id).then(value => setPosts([...value]))
+        setUserId(id)
+    }
 
     return (
         <div>
-            <div className={style.wrap}>
-                <Users/>
-                <UsersDetails/>
+            <div className={css.wrap}>
+                <Users getUser={getUser}/>
+                {user && <UsersDetails user={user} getUserId={getUserId}/>}
             </div>
-            <Posts/>
+            {userId && <Posts userId={userId}/>}
         </div>
     );
 };
